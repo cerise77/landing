@@ -1,0 +1,30 @@
+{
+  "name": "plan",
+  "version": "1.0.0",
+  "description": "cool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerise77/plan.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "cerise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerise77/plan/issues"
+  },
+  "homepage": "https://github.com/cerise77/plan#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
