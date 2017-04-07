@@ -13,7 +13,7 @@ console.log(info);*/
 
 //////////////////////////////////////
 
-const Server = require('./server/server4');
+//const Server = require('./server/server4');
 
 //app.set('port', (process.env.PORT || 5000));
 
@@ -21,8 +21,21 @@ const Server = require('./server/server4');
   console.log('Node app is running on port', app.get('port'));
 });*/
 
-const hostname = '127.0.0.1';
-const port = 5000;
+//const hostname = '127.0.0.1';
+//const port = 5000;
 //let info = "\nnode-static-http-server by Janus Nic\nExamples of HTTP static file serving in Node.js\nSee: https://github.com/janusnic/web-dev-node\n";
-Server.start(port, hostname);
+//Server.start(port, hostname);
 //Server.start(port, hostname, info);
+
+
+
+var app = require('./server/server4');
+var debug = require('debug')('web-dev-node:server');
+var http = require('http');
+
+var port = process.env.PORT || '5000';
+app.set('port', port);
+
+var server = http.createServer(app);
+
+server.listen(port);
