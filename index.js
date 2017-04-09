@@ -1,41 +1,18 @@
-/*const http = require('http');
-let router = require('./server/server2');
-const hostname = '127.0.0.1';
-const port = 3000;
-let info = "\nnode-static-http-server by Janus Nic\nExamples of HTTP static file serving in Node.js\nSee: https://github.com/janusnic/web-dev-node\n";
+var express = require('express');
+var app = express();
 
-const server = http.createServer(router.handleRequest);
-server.listen(port, hostname, () => {
-      console.log(`Server running at http://${hostname}:${port}/`);
+app.set('port', (process.env.PORT || 5000));
+
+app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response) {
+  response.render('pages/index');
 });
-console.log(info);*/
 
-
-//////////////////////////////////////
-
-//const Server = require('./server/server4');
-
-//app.set('port', (process.env.PORT || 5000));
-
-/*app.listen(app.get('port'), function() {
+app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
-});*/
-
-//const hostname = '127.0.0.1';
-//const port = 5000;
-//let info = "\nnode-static-http-server by Janus Nic\nExamples of HTTP static file serving in Node.js\nSee: https://github.com/janusnic/web-dev-node\n";
-//Server.start(port, hostname);
-//Server.start(port, hostname, info);
-
-
-
-var app = require('./server/server4');
-var debug = require('debug')('web-dev-node:server');
-var http = require('http');
-
-var port = process.env.PORT || '5000';
-app.set('port', port);
-
-var server = http.createServer(app);
-
-server.listen(port);
+});

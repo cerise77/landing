@@ -73,11 +73,11 @@ article:nth-of-type(5) {
   background-color: #555;
 }
 article:nth-of-type(6) {
-  background-image: url("img/4b.jpg");
+  background-image: url("img/4b_11.jpg");
 }
 article:nth-of-type(7) {
   background-image: url("img/4c.jpg");
-  background-color: #555;
+  /*background-color: #555;*/
 }
 article:nth-of-type(8) {
   background-image: url("img/2a.jpg");
@@ -220,7 +220,7 @@ header nav li:last-child{
   }
   .banner .picture {
     position: absolute;
-    background-image: url(img/1b.jpg);
+    background-image: url("img/1b.jpg");
     top: 0;
     left: 0;
     width: 100%;
@@ -286,22 +286,22 @@ header nav li:last-child{
   }
 
   #p1 {
-    background-image: url(img/2a.jpg);
+    background-image: url("./img/2a.jpg");
   }
   #p2 {
-    background-image: url(img/2b.jpg);
+    background-image: url("./img/2b.jpg");
   }
   #p3 {
-    background-image: url(img/2c.jpg);
+    background-image: url("./img/2c.jpg");
   }
   #p4 {
-    background-image: url(img/3a.jpg);
+    background-image: url("./img/3a.jpg");
   }
   #p5 {
-    background-image: url(img/3b.jpg);
+    background-image: url("./img/3b.jpg");
   }
   #p6 {
-    background-image: url(img/3c.jpg);
+    background-image: url("./img/3c.jpg");
   }
 
   .action .grid li.photo {

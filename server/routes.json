@@ -1,6 +1,0 @@
-{
-    "/": {
-      "handler": "main",
-      "action": "index"
-    }
- }
