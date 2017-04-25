@@ -604,11 +604,11 @@ header a.cart-link.active span.returnToShop {
 
 
 /*-----Submenu-------*/
-/*.submenu {
+.submenu {
   margin-top: 10px;
  	background: #385b7a;
  	font-size: 14px;
-}*/
+}
 @media only screen and (max-width: 900px) {
   .mm-3column {
     width: 100%;
