@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="login.css" rel="stylesheet" />
+  <title>Login</title>
+</head>
+<body>
+  <section class="form">
+    <article class="tab-content" id="login">
+      <ul class="tab-group">
+        <li class="tab-group-link active"  tabindex="1"><a href="#login">Вход</a></li>
+        <li class="tab-group-link"  tabindex="2"><a href="#signup">Регистрация</a></li>
+      </ul>
+      <h1>Вход для клиентов</h1>
+      <form action="/" method="post">
+        <div class="field-wrap">
+          <label placeholder="Имя">E-mail<span class="req">*</span></label>
+          <input type="email" required autocomplete="off"/>
+        </div>
+        <div class="field-wrap">
+          <label>Пароль<span class="req">*</span></label>
+          <input type="password" required autocomplete="off"/>
+        </div>
+        <p class="forgot"><a href="#">Забыли пароль?</a></p>
+        <button class="form-button button-block">Войти</button>
+      </form>
+    </article>
+    <article class="tab-content" id="signup">
+      <ul class="tab-group">
+        <li class="tab-group-link"  tabindex="1"><a href="#login">Вход</a></li>
+        <li class="tab-group-link active"  tabindex="2"><a href="#signup">Регистрация</a></li>
+      </ul>
+      <h1>Регистрация</h1>
+      <form action="/" method="post">
+        <div class="top-row">
+          <div class="field-wrap">
+            <label>Фамилия<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" />
+          </div>
+          <div class="field-wrap">
+            <label>Имя<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" />
+          </div>
+        </div>
+        <div class="field-wrap">
+          <label>E-mail<span class="req">*</span></label>
+          <input type="email" required autocomplete="off"/>
+        </div>
+        <div class="field-wrap">
+          <label>Пароль<span class="req">*</span></label>
+          <input type="password" required autocomplete="off"/>
+        </div>
+        <button type="submit" class="form-button button-block">Зарегистрироваться</button>
+      </form>
+    </article>
+  </section>
+</body>
+</html>

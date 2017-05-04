@@ -1,0 +1,18 @@
+{
+    "/": {
+      "handler": "main",
+      "action": "index"
+    },
+    "/blog": {
+      "handler": "main",
+      "action": "blog"
+    },
+    "/contacts": {
+      "handler": "main",
+      "action": "contacts"
+    },
+    "/site": {
+      "handler": "main",
+      "action": "site"
+    }
+ }
